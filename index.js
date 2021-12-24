@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/public", express.static(path.join(__dirname, 'public')));
 app.use(cors());
 app.use("/", require("./routes/get-short-url"));
-app.use("/url", require("./routes/reditect-short-url"));
+app.use("/", require("./routes/reditect-short-url"));
 
 app.get("/", function(req, res){
     res.sendFile(path.join(__dirname, "/public/index.html"));
