@@ -2,7 +2,7 @@ const Url = require("../config/config");
 const {nanoid} = require("nanoid");
 const validUrl = require("valid-url");
 
-const baseURL = "http://localhost:5000/url";
+const baseURL = "https://sukurl.herokuapp.com/url";
 
 async function checkIfUrlPresent({longUrl}){
     try {
